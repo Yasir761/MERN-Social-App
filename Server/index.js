@@ -35,12 +35,15 @@ app.use(handleErrors); // Catch and format errors
 
 // uses of routes
 
+app.get('/health', (req, res) => res.status(200).send('OK'));
+
+
 app.use('/auth', AuthRoute);
 app.use('/user', UserRoute);
 app.use('/post', PostRoute);
 app.use('/upload', UploadRoute);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 connectDatabase().then(() => {
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
