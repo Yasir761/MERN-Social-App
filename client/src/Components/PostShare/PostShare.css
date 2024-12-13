@@ -1,0 +1,126 @@
+.PostShare {
+    display: flex;
+    gap: 1rem;
+    background-color: var(--cardColor);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.PostShare:hover {
+    background-color: var(--hoverCardColor); /* Hover effect for better interactivity */
+}
+
+.PostShare > img {
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: cover; /* Ensures image fits perfectly */
+    border: 2px solid var(--accentColor); /* Optional accent border */
+}
+
+.PostShare > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.PostShare > div > input {
+    background-color: var(--inputColor);
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--borderColor); /* Subtle border for better visibility */
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds depth to input */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth focus effects */
+}
+
+.PostShare > div > input:focus {
+    border-color: var(--accentColor); /* Highlight border on focus */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Enhanced focus shadow */
+}
+
+.postOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.option {
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: var(--buttonBg);
+    color: var(--buttonText);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+.option:hover {
+    cursor: pointer;
+    background-color: var(--buttonHoverBg);
+    color: var(--buttonHoverText);
+}
+
+.ps-button {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--accentColor);
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.ps-button:hover {
+    background-color: var(--accentHoverColor);
+}
+
+.ps-button:disabled {
+    background-color: var(--disabledColor);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.previewImage {
+    position: relative;
+    margin-top: 1rem;
+    border: 1px solid var(--borderColor); /* Frame around preview image */
+    border-radius: 0.75rem;
+    overflow: hidden; /* Ensures the image fits within the border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.previewImage > svg {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.25rem;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.previewImage > svg:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.previewImage > img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}

@@ -1,0 +1,54 @@
+.LogoSearch {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Search {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1; /* Lighter background */
+    border-radius: 20px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.Search:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+.Search > input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 0 8px;
+    color: #555;
+    width: 150px;
+    transition: width 0.3s ease-in-out;
+}
+
+.Search > input:focus {
+    width: 200px; /* Expands the input when focused */
+}
+
+.s-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(98.63deg, #6674cc 0%, #b578ff 100%);
+    border-radius: 50%;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.s-icon:hover {
+    background: linear-gradient(98.63deg, #5a63b8 0%, #9d6bf6 100%);
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}

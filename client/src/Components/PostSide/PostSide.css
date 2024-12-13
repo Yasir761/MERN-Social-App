@@ -1,0 +1,28 @@
+.PostSide {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* Increased gap for better spacing */
+    height: 100vh;
+    overflow-y: auto; /* Specify vertical scroll for clarity */
+    padding: 1rem; /* Add padding for better spacing */
+    background-color: var(--backgroundColor); /* Set a background color for contrast */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    scrollbar-width: thin; /* Make the scrollbar thinner */
+    scrollbar-color: var(--scrollbarThumb) var(--scrollbarTrack); /* Style scrollbar */
+}
+
+/* For webkit-based browsers (Chrome, Edge, Safari) */
+.PostSide::-webkit-scrollbar {
+    width: 8px;
+}
+
+.PostSide::-webkit-scrollbar-track {
+    background: var(--scrollbarTrack);
+    border-radius: 10px;
+}
+
+.PostSide::-webkit-scrollbar-thumb {
+    background: var(--scrollbarThumb);
+    border-radius: 10px;
+}

@@ -1,0 +1,67 @@
+.FollowersCard {
+    width: 100%;
+    border-radius: 1rem; /* Rounded corners for a softer look */
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px; /* Slightly bigger font size for better readability */
+    background-color: #ffffff; /* White background for contrast */
+    padding: 1.5rem; /* Added padding for better spacing */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.follower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb; /* Light border between followers */
+    padding: 0.8rem 0; /* Spacing for each follower item */
+}
+
+.follower > div {
+    display: flex;
+    gap: 12px; /* Increased gap between profile info */
+    align-items: center; /* Ensures alignment of images and text */
+}
+
+.followerImg {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Ensures the image covers the circle */
+    border: 2px solid #f3f4f6; /* Adds a subtle border around the image */
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Adjusted for better alignment */
+    justify-content: center;
+}
+
+.name > span:nth-of-type(1) {
+    font-weight: bold;
+    color: #333333; /* Darker text for better contrast */
+    font-size: 14px; /* Slightly smaller text for name */
+}
+
+.name > span:nth-of-type(2) {
+    color: #6b7280; /* Subtle gray for the secondary info */
+    font-size: 13px; /* Smaller font size for secondary text */
+}
+
+.fc-button {
+    height: 2.5rem;
+    padding: 0 1rem; /* Improved padding for better balance */
+    background-color: #4CAF50; /* Green background for a call-to-action button */
+    color: white; /* White text color for the button */
+    border-radius: 0.5rem; /* Rounded corners for the button */
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.fc-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
