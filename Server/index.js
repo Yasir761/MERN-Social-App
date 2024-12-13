@@ -26,7 +26,19 @@ app.use('/images', express.static('public/images'));
 // MiddleWare
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
-app.use(cors());
+
+
+
+const allowedOrigins = [
+  'https://mern-social-app-henna.vercel.app/'
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true,
+}));
+
+
 
 app.use(handleErrors); // Catch and format errors
 
