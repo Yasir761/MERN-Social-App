@@ -47,13 +47,13 @@ export const loginUser = async (req, res) => {
             const validity = await bcrypt.compare(password, user.password)
 
             if (!validity) {
-                res.status(400).json("Soory, Please enter the correct email or password!");
+                res.status(400).json("Sorry, Please enter the correct email or password!");
             } else {
                 const token = jwt.sign({ email: user.email, id: user._id }, process.env.JWT_KEY);
                 res.status(200).json({ user, token });
             }
         } else {
-            res.status(404).json("Soory, Please enter the correct email or password!")
+            res.status(404).json("Sorry, Please enter the correct email or password!")
         }
     } catch (error) {
         res.status(500).json({ message: error.message })
