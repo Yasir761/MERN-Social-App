@@ -47,7 +47,6 @@ app.use(handleErrors); // Catch and format errors
 
 // uses of routes
 
-app.get('/health', (req, res) => res.status(200).send('OK'));
 
 
 app.use('/auth', AuthRoute);
