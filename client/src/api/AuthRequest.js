@@ -1,6 +1,9 @@
 import axios from 'axios';
+import dotenv from "dotenv"
 
-const API = axios.create({ baseURL: 'https://mern-social-app-production-a43f.up.railway.app/' });
+dotenv.config()
+
+const API = axios.create({ baseURL: Process.env.baseURL });
 
 export const logIn = (formData) => API.post('/auth/login', formData); 
 
