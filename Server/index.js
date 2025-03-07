@@ -47,8 +47,6 @@ app.use(handleErrors); // Catch and format errors
 
 // uses of routes
 
-
-
 app.use('/auth', AuthRoute);
 app.use('/user', UserRoute);
 app.use('/post', PostRoute);
