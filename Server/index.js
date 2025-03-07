@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import AuthRoute from './Routes/AuthRoute.js';
 import UserRoute from './Routes/UserRoute.js';
 import PostRoute from './Routes/PostRoute.js';
-import UploadRoute from './Routes/upload.js'; // solved 
+import UploadRoute from './Routes/upload.js'; 
 import { connectDatabase } from './config/db.js';
 import { handleErrors } from './Middleware/errorHandler.js';
 import validateEnv from './utils/validateEnv.js';
